@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 ---
 
 # Construyendo el Futuro de México
