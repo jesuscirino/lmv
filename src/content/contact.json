@@ -75,6 +75,14 @@
       "es": "Teléfono (Oficina y Talleres): 764 688 05 95"
     },
     "whatsapp": "+52 764 117 8700",
+    "address": {
+      "en": "Address: Privada de Aldama, Col. Centro, Xicotepec de Juárez, Puebla C.P. 73080",
+      "es": "Dirección: Privada de Aldama, Col. Centro, Xicotepec de Juárez, Puebla C.P. 73080"
+    },
+    "coordinates": {
+      "lat": 20.267342,
+      "lng": -97.960902
+    },
     "responseTime": {
       "en": "We typically respond within 24-48 hours",
       "es": "Normalmente respondemos en 24-48 horas"
