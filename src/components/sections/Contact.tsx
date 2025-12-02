@@ -53,6 +53,11 @@ export default function Contact() {
       return;
     }
 
+    // Save to localStorage for testing
+    const submissions = JSON.parse(localStorage.getItem('lmv_contact_submissions') || '[]');
+    submissions.push({ ...formData, timestamp: new Date().toISOString() });
+    localStorage.setItem('lmv_contact_submissions', JSON.stringify(submissions));
+
     alert(
       `Thank you for your message, ${formData.name}! We'll get back to you soon.`,
     );
