@@ -24,7 +24,7 @@ interface LanguageProviderProps {
 }
 
 export function LanguageProvider({ children }: LanguageProviderProps) {
-  const [currentLang, setCurrentLang] = useState<Language>('en');
+  const [currentLang, setCurrentLang] = useState<Language>('es');
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -32,6 +32,9 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
     const stored = localStorage.getItem('language') as Language | null;
     if (stored && (stored === 'en' || stored === 'es')) {
       setCurrentLang(stored);
+    } else {
+      // Set Spanish as default if no preference stored
+      setCurrentLang('es');
     }
   }, []);
 

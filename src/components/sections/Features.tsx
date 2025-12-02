@@ -34,6 +34,53 @@ export default function Features() {
     },
   };
 
+  const featuresList = [
+    {
+      icon: 'Hammer',
+      title: {
+        en: 'Design & Construction',
+        es: 'Diseño y Construcción'
+      },
+      description: {
+        en: 'Comprehensive solutions from conceptualization to execution of civil and architectural works.',
+        es: 'Soluciones integrales desde la conceptualización hasta la ejecución de obra civil y arquitectónica.'
+      }
+    },
+    {
+      icon: 'Map',
+      title: {
+        en: 'Earthworks & Topography',
+        es: 'Terracerías y Topografía'
+      },
+      description: {
+        en: 'Earth moving, leveling, and high-precision topographic surveys.',
+        es: 'Movimiento de tierras, nivelación y levantamientos topográficos con alta precisión.'
+      }
+    },
+    {
+      icon: 'Zap',
+      title: {
+        en: 'Installations',
+        es: 'Instalaciones'
+      },
+      description: {
+        en: 'Specialists in pluvial, electrical, sanitary, and HVAC installations.',
+        es: 'Especialistas en instalaciones pluviales, eléctricas, sanitarias y aire acondicionado (HVAC).'
+      }
+    },
+    {
+      icon: 'Wrench',
+      title: {
+        en: 'Maintenance',
+        es: 'Mantenimiento'
+      },
+      description: {
+        en: 'Preventive and corrective maintenance services for industrial and commercial infrastructures.',
+        es: 'Servicios de mantenimiento preventivo y correctivo para infraestructuras industriales y comerciales.'
+      }
+    }
+  ];
+
   return (
     <section
       id="features"
@@ -58,10 +105,10 @@ export default function Features() {
           animate={isInView ? 'visible' : 'hidden'}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {homeContent.features.items.map((feature, index) => {
+          {featuresList.map((feature, index) => {
             const IconComponent =
               LucideIcons[
-                feature.icon as keyof typeof LucideIcons
+              feature.icon as keyof typeof LucideIcons
               ] as LucideIcons.LucideIcon;
 
             return (

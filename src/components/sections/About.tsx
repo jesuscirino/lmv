@@ -10,6 +10,10 @@ export default function About() {
   const sectionTitle = t(aboutContent.sectionTitle);
   const storyTitle = t(aboutContent.story.title);
   const storyParagraphs = aboutContent.story.content;
+  const missionTitle = t(aboutContent.missionTitle);
+  const mission = t(aboutContent.mission);
+  const visionTitle = t(aboutContent.visionTitle);
+  const vision = t(aboutContent.vision);
   const values = aboutContent.values;
 
   return (
@@ -28,7 +32,7 @@ export default function About() {
             {sectionTitle}
           </h2>
 
-          <div className="mb-20">
+          <div className="mb-12">
             <h3 className="text-2xl sm:text-3xl font-semibold mb-6 text-foreground">
               {storyTitle}
             </h3>
@@ -45,6 +49,29 @@ export default function About() {
                 </motion.p>
               ))}
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-card p-6 rounded-lg border border-border"
+            >
+              <h3 className="text-xl font-bold mb-3 text-orange-600">{missionTitle}</h3>
+              <p className="text-muted-foreground">{mission}</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-card p-6 rounded-lg border border-border"
+            >
+              <h3 className="text-xl font-bold mb-3 text-orange-600">{visionTitle}</h3>
+              <p className="text-muted-foreground">{vision}</p>
+            </motion.div>
           </div>
 
           <div>

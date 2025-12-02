@@ -31,13 +31,6 @@ const Hero = () => {
     },
   };
 
-  const handleScrollToWaitlist = () => {
-    const waitlistSection = document.querySelector("#waitlist");
-    if (waitlistSection) {
-      waitlistSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   const handleScrollToContact = () => {
     const contactSection = document.querySelector("#contact");
     if (contactSection) {
@@ -45,52 +38,30 @@ const Hero = () => {
     }
   };
 
+  const handleScrollToProjects = () => {
+    const projectsSection = document.querySelector("#projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background to-muted/20 px-4 py-20">
-      {/* Decorative gradient blobs */}
-      <motion.div
-        initial={{ y: 0 }}
-        animate={{
-          y: [-10, 10, -10],
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 py-20">
+      {/* Background Image - Layer 1 (Bottom) */}
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          backgroundImage: 'url(/images/hero-bg.jpeg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute left-1/4 top-1/4 size-96 rounded-full bg-gradient-to-br from-gradient-from/30 to-gradient-to/30 blur-3xl"
-        aria-hidden="true"
-      />
-      <motion.div
-        initial={{ y: 0 }}
-        animate={{
-          y: [-10, 10, -10],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-        className="absolute bottom-1/4 right-1/4 size-80 rounded-full bg-gradient-to-br from-gradient-to/20 to-gradient-from/20 blur-3xl"
-        aria-hidden="true"
-      />
-      <motion.div
-        initial={{ y: 0 }}
-        animate={{
-          y: [-10, 10, -10],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
-        className="absolute right-1/3 top-1/3 size-64 rounded-full bg-gradient-to-br from-gradient-from/20 to-gradient-to/20 blur-3xl"
-        aria-hidden="true"
       />
 
-      {/* Content */}
+      {/* Dark overlay - Layer 2 */}
+      <div className="absolute inset-0 -z-10 bg-black/60" />
+
+      {/* Content - Layer 3 (Top) */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -100,17 +71,15 @@ const Hero = () => {
         {/* Headline */}
         <motion.h1
           variants={itemVariants}
-          className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-white drop-shadow-lg"
         >
-          <span className="bg-gradient-to-r from-foreground via-foreground to-foreground/80 bg-clip-text text-transparent">
-            {t(content.hero.headline)}
-          </span>
+          {t(content.hero.headline)}
         </motion.h1>
 
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground sm:text-xl md:text-2xl"
+          className="mx-auto mb-10 max-w-2xl text-lg sm:text-xl md:text-2xl text-gray-100 drop-shadow-md"
         >
           {t(content.hero.subheadline)}
         </motion.p>
@@ -122,18 +91,18 @@ const Hero = () => {
         >
           <Button
             size="lg"
-            onClick={handleScrollToWaitlist}
-            className="w-full text-base sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
+            onClick={handleScrollToContact}
+            className="w-full text-base sm:w-auto sm:px-8 sm:py-6 sm:text-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold shadow-xl"
           >
             {t(content.hero.ctaText)}
           </Button>
           <Button
             size="lg"
             variant="outline"
-            onClick={handleScrollToContact}
-            className="w-full text-base sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
+            onClick={handleScrollToProjects}
+            className="w-full text-base sm:w-auto sm:px-8 sm:py-6 sm:text-lg bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 font-semibold shadow-xl"
           >
-            {t(content.hero.ctaSecondaryText)}
+            {t(content.hero.ctaSecondaryText)} <span aria-hidden="true">→</span>
           </Button>
         </motion.div>
       </motion.div>

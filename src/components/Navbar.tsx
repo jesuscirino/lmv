@@ -9,13 +9,7 @@ import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { Button } from '@/components/ui/button'
 import siteContent from '@/content/site.json'
 
-const navLinks = [
-  { href: '#features', label: { en: 'Features', es: 'Características' } },
-  { href: '#pricing', label: { en: 'Pricing', es: 'Precios' } },
-  { href: '#faq', label: { en: 'FAQ', es: 'FAQ' } },
-  { href: '#about', label: { en: 'About', es: 'Acerca' } },
-  { href: '#contact', label: { en: 'Contact', es: 'Contacto' } },
-]
+const navLinks = siteContent.navigation
 
 export function Navbar() {
   const { t } = useTranslation()
@@ -40,12 +34,9 @@ export function Navbar() {
     }
   }
 
-  const handleScrollToWaitlist = () => {
-    const waitlistSection = document.querySelector('#waitlist')
-    if (waitlistSection) {
-      waitlistSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      setIsMobileMenuOpen(false)
-    }
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/527641178700', '_blank')
+    setIsMobileMenuOpen(false)
   }
 
   return (
@@ -54,22 +45,26 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.3 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-background/80 backdrop-blur-md shadow-lg py-3'
-            : 'bg-background/60 backdrop-blur-sm py-4'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+          ? 'bg-background/80 backdrop-blur-md shadow-lg py-3'
+          : 'bg-background/60 backdrop-blur-sm py-4'
+          }`}
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <motion.a
-              href="/"
-              className="text-2xl font-bold text-brand-gradient"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex items-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {siteContent.brand.name}
+              <img className="h-10 w-auto" src="/logo.jpeg" alt="LMV Logo" />
+              <span className="font-bold text-xl text-gray-900 dark:text-white">LMV</span>
             </motion.a>
 
             {/* Desktop Navigation */}
@@ -92,10 +87,10 @@ export function Navbar() {
               <ThemeToggle />
               <Button
                 size="sm"
-                onClick={handleScrollToWaitlist}
-                className="!bg-brand-gradient hover:opacity-90 text-white"
+                onClick={handleWhatsAppClick}
+                className="bg-[#25D366] hover:bg-[#20BA5A] text-white"
               >
-                {t({ en: 'Get Started', es: 'Comenzar' })}
+                WhatsApp
               </Button>
             </div>
 
@@ -138,10 +133,11 @@ export function Navbar() {
             >
               <div className="flex flex-col h-full">
                 {/* Header */}
-                <div className="flex items-center justify-between p-4 border-b border-border">
-                  <span className="text-xl font-bold text-brand-gradient">
-                    {siteContent.brand.name}
-                  </span>
+                <div className="flex items-center justify-between h-16">
+                  <div className="flex-shrink-0 flex items-center gap-2">
+                    <img className="h-10 w-auto" src="/logo.jpeg" alt="LMV Logo" />
+                    <span className="font-bold text-xl text-gray-900 dark:text-white">LMV</span>
+                  </div>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="p-2 text-muted-foreground hover:bg-muted rounded-lg transition-colors"
@@ -171,10 +167,10 @@ export function Navbar() {
                 {/* CTA Button */}
                 <div className="p-4 border-t border-border">
                   <Button
-                    onClick={handleScrollToWaitlist}
-                    className="w-full !bg-brand-gradient hover:opacity-90 text-white"
+                    onClick={handleWhatsAppClick}
+                    className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white"
                   >
-                    {t({ en: 'Get Started', es: 'Comenzar' })}
+                    WhatsApp
                   </Button>
                 </div>
               </div>

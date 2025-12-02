@@ -42,7 +42,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold text-brand-gradient mb-4">
+            <h3 className="text-2xl font-bold text-yellow-500 mb-4">
               {siteContent.brand.name}
             </h3>
             <p className="text-muted-foreground mb-4 max-w-md">
@@ -115,12 +115,6 @@ export function Footer() {
               {t({
                 en: `© ${currentYear} ${siteContent.brand.name}. All rights reserved.`,
                 es: `© ${currentYear} ${siteContent.brand.name}. Todos los derechos reservados.`,
-              })}
-            </p>
-            <p className="text-sm text-muted-foreground">
-              {t({
-                en: 'Made with ❤️ using Next.js',
-                es: 'Hecho con ❤️ usando Next.js',
               })}
             </p>
           </div>

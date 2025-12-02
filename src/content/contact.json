@@ -4,8 +4,8 @@
     "es": "Contáctanos"
   },
   "sectionDescription": {
-    "en": "[Brief message encouraging contact - e.g., 'Have questions? We'd love to hear from you.']",
-    "es": "[Breve mensaje alentando el contacto - ej., '¿Tienes preguntas? Nos encantaría saber de ti.']"
+    "en": "Have a project in mind? We'd love to hear from you and discuss how we can help bring your vision to life.",
+    "es": "¿Tiene un proyecto en mente? Nos encantaría saber de usted y discutir cómo podemos ayudar a hacer realidad su visión."
   },
   "form": {
     "fields": [
@@ -18,7 +18,7 @@
         },
         "placeholder": {
           "en": "Your name",
-          "es": "Tu nombre"
+          "es": "Su nombre"
         },
         "required": true
       },
@@ -31,7 +31,7 @@
         },
         "placeholder": {
           "en": "your.email@example.com",
-          "es": "tu.email@ejemplo.com"
+          "es": "su.email@ejemplo.com"
         },
         "required": true
       },
@@ -43,8 +43,8 @@
           "es": "Asunto"
         },
         "placeholder": {
-          "en": "What is this about?",
-          "es": "¿De qué se trata?"
+          "en": "Project type or inquiry",
+          "es": "Tipo de proyecto o consulta"
         },
         "required": true
       },
@@ -56,8 +56,8 @@
           "es": "Mensaje"
         },
         "placeholder": {
-          "en": "Tell us more...",
-          "es": "Cuéntanos más..."
+          "en": "Tell us about your project...",
+          "es": "Cuéntenos sobre su proyecto..."
         },
         "required": true,
         "rows": 5
@@ -69,10 +69,15 @@
     }
   },
   "contactInfo": {
-    "email": "hello@yourcompany.com",
+    "email": "grupoconstructorlmv@gmail.com",
+    "phone": {
+      "en": "Phone (Office & Workshop): 764 688 05 95",
+      "es": "Teléfono (Oficina y Talleres): 764 688 05 95"
+    },
+    "whatsapp": "+52 764 117 8700",
     "responseTime": {
-      "en": "We typically respond within 24 hours",
-      "es": "Normalmente respondemos en 24 horas"
+      "en": "We typically respond within 24-48 hours",
+      "es": "Normalmente respondemos en 24-48 horas"
     }
   }
 }

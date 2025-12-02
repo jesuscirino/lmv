@@ -1,0 +1,56 @@
+{
+    "sectionTitle": {
+        "en": "Our Projects",
+        "es": "Nuestros Proyectos"
+    },
+    "sectionDescription": {
+        "en": "A robust portfolio of significant works in both the public and private sectors.",
+        "es": "Un portafolio robusto de obras significativas en el sector público y privado."
+    },
+    "projects": [
+        {
+            "title": {
+                "en": "Residential Project",
+                "es": "Proyecto Residencial"
+            },
+            "category": {
+                "en": "Construction",
+                "es": "Construcción"
+            },
+            "image": "/images/project1.jpeg"
+        },
+        {
+            "title": {
+                "en": "Industrial Warehouse",
+                "es": "Nave Industrial"
+            },
+            "category": {
+                "en": "Structure",
+                "es": "Estructura"
+            },
+            "image": "/images/project2.jpeg"
+        },
+        {
+            "title": {
+                "en": "Urban Infrastructure",
+                "es": "Infraestructura Urbana"
+            },
+            "category": {
+                "en": "Civil Works",
+                "es": "Obra Civil"
+            },
+            "image": "/images/project3.jpeg"
+        },
+        {
+            "title": {
+                "en": "Finishes & Exteriors",
+                "es": "Acabados y Exteriores"
+            },
+            "category": {
+                "en": "Design",
+                "es": "Diseño"
+            },
+            "image": "/images/project4.jpeg"
+        }
+    ]
+}

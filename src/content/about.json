@@ -1,27 +1,39 @@
 {
   "sectionTitle": {
     "en": "About Us",
-    "es": "Acerca de Nosotros"
+    "es": "Nosotros"
   },
   "story": {
     "title": {
-      "en": "[Our Story Title - e.g., 'Why We Built This']",
-      "es": "[Título de Nuestra Historia - ej., 'Por Qué Construimos Esto']"
+      "en": "Our Story",
+      "es": "Nuestra Historia"
     },
     "content": [
       {
-        "en": "[First paragraph - Explain the problem you identified or the inspiration behind your product. Be authentic and relatable. 2-3 sentences.]",
-        "es": "[Primer párrafo - Explica el problema que identificaste o la inspiración detrás de tu producto. Sé auténtico y cercano. 2-3 oraciones.]"
+        "en": "Founded in 2017 by a group of professionals from Puebla, Grupo Constructor LMV is a young and dynamic company that has achieved accelerated growth thanks to an unwavering commitment to quality.",
+        "es": "Fundado en 2017 por un grupo de profesionistas poblanos, Grupo Constructor LMV es una empresa joven y dinámica que ha logrado un crecimiento acelerado gracias a un compromiso inquebrantable con la calidad."
       },
       {
-        "en": "[Second paragraph - Describe your journey or approach to solving the problem. Share what makes your solution unique. 2-3 sentences.]",
-        "es": "[Segundo párrafo - Describe tu viaje o enfoque para resolver el problema. Comparte qué hace única tu solución. 2-3 oraciones.]"
-      },
-      {
-        "en": "[Third paragraph - Share your vision for the future and your commitment to users. End with an inspiring note. 2-3 sentences.]",
-        "es": "[Tercer párrafo - Comparte tu visión del futuro y tu compromiso con los usuarios. Termina con una nota inspiradora. 2-3 oraciones.]"
+        "en": "Our main strength lies in the responsible management of resources allocated to each project, which allows us to guarantee strict compliance with agreed costs and execution times. This discipline has enabled us to develop a robust portfolio of significant works in both the public and private sectors in a short period of time.",
+        "es": "Nuestra principal fortaleza radica en la administración responsable de los recursos asignados a cada proyecto, lo que nos permite garantizar el cumplimiento estricto de los costos y tiempos de ejecución pactados. Esta disciplina nos ha permitido desarrollar un portafolio robusto de obras significativas tanto en el sector público como en el privado en un corto periodo de tiempo."
       }
     ]
+  },
+  "missionTitle": {
+    "en": "Mission",
+    "es": "Misión"
+  },
+  "mission": {
+    "en": "Provide design, construction, earthworks, topography, and installation solutions (pluvial, electrical, air conditioning, etc.), strictly adhering to our clients' quality standards and regulations.",
+    "es": "Proveer soluciones de diseño, construcción, terracerías, topografía e instalaciones pluviales, eléctricas, aire acondicionado, etc., apegados estrictamente a los estándares y normas de calidad de nuestros clientes."
+  },
+  "visionTitle": {
+    "en": "Vision",
+    "es": "Visión"
+  },
+  "vision": {
+    "en": "To be a leading company nationwide, offering the best quality in our services and positioning ourselves as the best Mexican company in our field through teamwork.",
+    "es": "Ser una empresa líder a nivel nacional ofreciendo la mejor calidad en nuestros servicios, posicionándonos como la mejor empresa mexicana en nuestro ramo gracias al trabajo en equipo."
   },
   "valuesTitle": {
     "en": "Our Values",
@@ -30,32 +42,32 @@
   "values": [
     {
       "title": {
-        "en": "[Value 1 Title - e.g., 'Customer First']",
-        "es": "[Título Valor 1 - ej., 'Cliente Primero']"
+        "en": "Technical Excellence",
+        "es": "Excelencia Técnica"
       },
       "description": {
-        "en": "[Describe this core value and how it influences your work - 1-2 sentences]",
-        "es": "[Describe este valor fundamental y cómo influye en tu trabajo - 1-2 oraciones]"
+        "en": "We act with deep respect for the technical specifications of each project, applying cutting-edge technologies and always adhering to current regulations.",
+        "es": "Actuamos con un profundo respeto por las especificaciones técnicas de cada proyecto, aplicando tecnologías de vanguardia y apegándonos siempre a la normativa vigente."
       }
     },
     {
       "title": {
-        "en": "[Value 2 Title - e.g., 'Innovation']",
-        "es": "[Título Valor 2 - ej., 'Innovación']"
+        "en": "Humility",
+        "es": "Humildad"
       },
       "description": {
-        "en": "[Describe this core value and how it influences your work - 1-2 sentences]",
-        "es": "[Describe este valor fundamental y cómo influye en tu trabajo - 1-2 oraciones]"
+        "en": "The humility to learn and adapt guides our organization, allowing us to continuously improve and meet the evolving needs of our clients.",
+        "es": "La humildad para aprender y adaptarnos guía a nuestra organización, permitiéndonos mejorar continuamente y satisfacer las necesidades cambiantes de nuestros clientes."
       }
     },
     {
       "title": {
-        "en": "[Value 3 Title - e.g., 'Transparency']",
-        "es": "[Título Valor 3 - ej., 'Transparencia']"
+        "en": "Prudence",
+        "es": "Prudencia"
       },
       "description": {
-        "en": "[Describe this core value and how it influences your work - 1-2 sentences]",
-        "es": "[Describe este valor fundamental y cómo influye en tu trabajo - 1-2 oraciones]"
+        "en": "Prudence in decision-making is one of the virtues that defines us, ensuring responsible and sustainable outcomes for all our stakeholders.",
+        "es": "La prudencia en la toma de decisiones es una de las virtudes que nos definen, asegurando resultados responsables y sostenibles para todos nuestros grupos de interés."
       }
     }
   ]

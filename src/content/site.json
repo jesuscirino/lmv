@@ -1,14 +1,14 @@
 {
   "brand": {
-    "name": "[Your Brand Name]",
+    "name": "LMV",
     "description": {
-      "en": "[Your product description - what problem it solves]",
-      "es": "[Descripción de tu producto - qué problema resuelve]"
+      "en": "Strategic and reliable partner in Mexico's construction industry",
+      "es": "Socio estratégico y confiable en la industria de la construcción en México"
     }
   },
   "tagline": {
-    "en": "[Your product tagline here - what makes you unique]",
-    "es": "[Tu eslogan aquí - qué te hace único]"
+    "en": "Building Excellence Since 2017",
+    "es": "Construyendo Excelencia Desde 2017"
   },
   "navigation": [
     {
@@ -16,21 +16,28 @@
         "en": "Home",
         "es": "Inicio"
       },
-      "href": "/"
+      "href": "#top"
     },
     {
       "label": {
-        "en": "Features",
-        "es": "Características"
+        "en": "About",
+        "es": "Nosotros"
+      },
+      "href": "#about"
+    },
+    {
+      "label": {
+        "en": "Services",
+        "es": "Servicios"
       },
       "href": "#features"
     },
     {
       "label": {
-        "en": "Pricing",
-        "es": "Precios"
+        "en": "Projects",
+        "es": "Proyectos"
       },
-      "href": "#pricing"
+      "href": "#projects"
     },
     {
       "label": {
@@ -38,13 +45,6 @@
         "es": "Preguntas"
       },
       "href": "#faq"
-    },
-    {
-      "label": {
-        "en": "About",
-        "es": "Acerca"
-      },
-      "href": "#about"
     },
     {
       "label": {
@@ -56,35 +56,19 @@
   ],
   "footer": {
     "copyright": {
-      "en": "© 2024 [Your Company Name]. All rights reserved.",
-      "es": "© 2024 [Nombre de Tu Empresa]. Todos los derechos reservados."
+      "en": "© 2024 Grupo Constructor LMV. All rights reserved.",
+      "es": "© 2024 Grupo Constructor LMV. Todos los derechos reservados."
     },
-    "socialLinks": [
-      {
-        "platform": "twitter",
-        "url": "https://twitter.com/yourcompany",
-        "icon": "Twitter"
-      },
-      {
-        "platform": "linkedin",
-        "url": "https://linkedin.com/company/yourcompany",
-        "icon": "Linkedin"
-      },
-      {
-        "platform": "github",
-        "url": "https://github.com/yourcompany",
-        "icon": "Github"
-      }
-    ]
+    "socialLinks": []
   },
   "meta": {
     "titleTemplate": {
-      "en": "%s | [Your Brand Name]",
-      "es": "%s | [Nombre de Tu Marca]"
+      "en": "%s | Grupo Constructor LMV",
+      "es": "%s | Grupo Constructor LMV"
     },
     "description": {
-      "en": "[Describe your product in 150-160 characters - what problem it solves and who it's for]",
-      "es": "[Describe tu producto en 150-160 caracteres - qué problema resuelve y para quién es]"
+      "en": "Grupo Constructor LMV - Strategic and reliable partner in Mexico's construction industry. Providing design, construction, earthworks, and installation solutions since 2017.",
+      "es": "Grupo Constructor LMV - Socio estratégico y confiable en la industria de la construcción en México. Proveyendo soluciones de diseño, construcción, terracerías e instalaciones desde 2017."
     }
   }
 }
